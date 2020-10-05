@@ -36,7 +36,7 @@ $roompass=$encrypted;
 
 $htaccess="AuthName Dialog 
 AuthType Basic 
-AuthUserFile C:/xampp/htdocs/sunrtc web/htdocs/".$room."/.htpasswd
+AuthUserFile /htdocs/".$room."/.htpasswd
 Require valid-user";
 $file=fopen("$room/.htaccess","w");
 fwrite($file,"$htaccess");
